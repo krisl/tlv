@@ -4,3 +4,7 @@ tlv: main.c tlv.c tlv.h
 ringbuffer:
 	gcc ringbuffer.c -Wall -Werror -Wextra -Wshadow -std=c11 -Wpedantic 
 
+.PHONY: clean
+
+clean:
+	rm *.o
